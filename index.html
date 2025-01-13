@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+  <body class="mx-auto max-w-screen-2xl transition-colors">
+    <nav
+      class="fixed top-0 left-0 z-20 w-full bg-th-background"
+      id="nav-wrapper"
+    >
+      <div class="flex items-center justify-between px-6 py-2 mx-auto">
+        <div
+          class="bg-th-primary text-th-background text-base font-bold w-8 h-8 flex justify-center items-center rounded shadow-lg"
+        >
+          R
+        </div>
+        <!-- Hamburger Menu for Small Screens -->
+        <button
+          id="menu-toggle"
+          aria-label="Toggle navigation menu"
+          class="block md:hidden text-th-primary focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <!-- Navbar Links -->
+        <ul id="menu" class="items-center hidden md:flex space-x-6">
+          <li><a href="#hero" class="link">Home</a></li>
+          <li><a href="./public/about.html" class="link">About</a></li>
+          <li><a href="./public/project.html" class="link">Projects</a></li>
+          <li><a href="./public/contact.html" class="link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sidebar for Small Screens -->
+    <aside
+      id="sidebar"
+      class="fixed inset-y-0 right-0 z-50 hidden w-64 bg-th-primary text-th-background transform translate-x-full transition-transform duration-300"
+    >
+      <button
+        id="sidebar-close"
+        class="absolute top-4 right-4 text-th-background focus:outline-none"
+      >
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <ul class="px-6 mt-12 text-2xl space-y-6">
+        <li><a href="#hero" class="link">Home</a></li>
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#projects" class="link">Projects</a></li>
+        <li><a href="#contact" class="link">Contact</a></li>
+        <li><button class="link" id="mobile-theme-button">Theme</button></li>
+      </ul>
+    </aside>
+
+    <main class="flex flex-col items-center justify-center mt-10 md:mt-0">
+      <section
+        class="section flex flex-col md:flex-row h-[650px] 2xl:h-[1100px] items-center gap-12"
+        id="hero"
+      >
+        <div class="flex flex-col items-center w-2/3 gap-12">
+          <h1
+            class="text-5xl font-bold leading-tight tracking-wide text-center"
+          >
+            Welcome! My name is Irdan, I&apos;m a
+            <span class="text-th-secondary">fullstack developer </span>
+          </h1>
+          <a href="./public/contact.html" class="btn btn-outline btn-lg">
+            Contact me!
+          </a>
+          <ul class="flex gap-12">
+            <li>
+              <img
+                src="../images/icons8-react-native-500.svg"
+                alt="Description of SVG"
+                width="50px"
+              />
+            </li>
+            <li>
+              <img
+                src="../images/icons8-javascript-500.svg"
+                alt="Description of SVG"
+                width="50px"
+              />
+            </li>
+
+            <li>
+              <img
+                src="../images/icons8-express-js.svg"
+                alt="Description of SVG"
+                width="50px"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="flex-col items-center hidden md:flex gap-2">
+          <img
+            src="../images/foto-formal-IR-removebg.png"
+            alt="Profile Picture"
+            class="w-80 h-100 rounded-full object-cover"
+          />
+        </div>
+      </section>
+
+      <section
+        class="py-12 section bg-th-primary text-th-background h-screen content-center"
+        id="about"
+      >
+        <h1 class="mb-8 text-3xl font-bold text-center text-th-secondary">
+          About Me
+          <span class="block w-12 h-1 mx-auto mt-2 bg-th-secondary"></span>
+        </h1>
+        <div class="flex flex-col items-center lg:flex-row gap-12">
+          <!-- Image Section -->
+          <div class="flex items-center justify-center w-full lg:w-1/3">
+            <img
+              src="./images/cropped-Irdan Guntara.JPG"
+              alt="A picture of me in a suit."
+              class="w-full h-auto max-w-sm rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <!-- Text Section -->
+          <div class="flex flex-col lg:w-2/3 space-y-6">
+            <p
+              class="mx-auto text-lg leading-relaxed text-justify max-w-prose lg:mx-0"
+            >
+              Hello! I'm
+              <span class="font-semibold text-th-secondary">Irdan Guntara</span
+              >, a software developer passionate about web design, web
+              development, data science, and network administration. I also have
+              experience in student organizational activities, demonstrating
+              strong leadership, teamwork, and project management skills. I'm
+              currently in college, continuously improving my skills and looking
+              for challenges and opportunities to grow. I'm an advocate for
+              collaboration and innovation, and I enjoy working on meaningful
+              projects that make an impact.
+            </p>
+            <!-- Links Section -->
+            <div class="flex justify-center lg:justify-start gap-6">
+              <div class="relative group">
+                <a href="https://github.com/irdangu" target="_blank">
+                  <img
+                    src="/icons/github.svg"
+                    alt="GitHub icon"
+                    class="w-8 h-8"
+                  />
+                </a>
+                <span
+                  class="absolute -top-12 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg bg-th-primary py-2 text-sm font-bold shadow-lg transition-all duration-300 ease-in-out group-hover:scale-100"
+                  >github<span> </span>
+                </span>
+              </div>
+
+              <div class="relative group">
+                <a
+                  href="https://www.linkedin.com/in/irdan-guntara-13a425279/"
+                  target="_blank"
+                >
+                  <img
+                    src="/icons/linkedin.svg"
+                    alt="LinkedIn icon"
+                    class="w-8 h-8"
+                  />
+                </a>
+                <span
+                  class="absolute -top-12 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg bg-th-primary py-2 text-sm font-bold shadow-lg transition-all duration-300 ease-in-out group-hover:scale-100"
+                  >linkedin<span> </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="flex items-center w-full p-2 border-t gap-6 border-th-foreground"
+      >
+        <div
+          class="bg-th-primary text-th-background text-base font-bold w-8 h-8 flex justify-center items-center rounded shadow-lg"
+        >
+          R
+        </div>
+        <p>© 2025 Irdan Guntara</p>
+      </footer>
+    </main>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const sidebar = document.getElementById("sidebar");
+      const sidebarClose = document.getElementById("sidebar-close");
+      const navWrapper = document.getElementById("nav-wrapper");
+
+      menuToggle.addEventListener("click", () => {
+        sidebar.classList.toggle("hidden");
+        sidebar.classList.remove("translate-x-full");
+        sidebar.classList.add("translate-x-0");
+      });
+
+      sidebarClose.addEventListener("click", () => {
+        sidebar.classList.toggle("hidden");
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("translate-x-full");
+      });
+
+      // Close sidebar when resizing back to desktop
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+          sidebar.classList.add("translate-x-full");
+        }
+      });
+
+      window.addEventListener("scroll", (e) => {
+        if (window.scrollY > 15) {
+          navWrapper.classList.add("shadow-md");
+        } else {
+          navWrapper.classList.remove("shadow-md");
+        }
+      });
+    </script>
+  </body>
+</html>

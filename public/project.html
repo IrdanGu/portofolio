@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="mx-auto max-w-screen-2xl transition-colors">
+    <nav
+      class="fixed top-0 left-0 z-20 w-full bg-th-background"
+      id="nav-wrapper"
+    >
+      <div class="flex items-center justify-between px-6 py-2 mx-auto">
+        <a href="#" class="text-2xl font-bold">
+          <img src="/images/favicon.ico" alt="icon" class="w-8" id="nav-logo" />
+        </a>
+        <!-- Hamburger Menu for Small Screens -->
+        <button
+          id="menu-toggle"
+          aria-label="Toggle navigation menu"
+          class="block md:hidden text-th-primary focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <!-- Navbar Links -->
+        <ul id="menu" class="items-center hidden md:flex space-x-6">
+          <li><a href="#hero" class="link">Home</a></li>
+          <li><a href="#about" class="link">About</a></li>
+          <li><a href="#projects" class="link">Projects</a></li>
+          <li><a href="#contact" class="link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sidebar for Small Screens -->
+    <aside
+      id="sidebar"
+      class="fixed inset-y-0 right-0 z-50 hidden w-64 bg-th-primary text-th-background transform translate-x-full transition-transform duration-300"
+    >
+      <button
+        id="sidebar-close"
+        class="absolute top-4 right-4 text-th-background focus:outline-none"
+      >
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <ul class="px-6 mt-12 text-2xl space-y-6">
+        <li><a href="#hero" class="link">Home</a></li>
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#projects" class="link">Projects</a></li>
+        <li><a href="#contact" class="link">Contact</a></li>
+        <li><button class="link" id="mobile-theme-button">Theme</button></li>
+      </ul>
+    </aside>
+
+    <main class="flex flex-col items-center justify-center mt-10 md:mt-0">
+      <section
+        class="section text-th-foreground h-screen content-center"
+        id="projects"
+      >
+        <h1 class="mb-8 text-3xl font-bold text-center text-th-primary">
+          Projects
+          <span class="block w-12 h-1 mx-auto mt-2 bg-th-primary"></span>
+        </h1>
+        <ul
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-8 md:gap-4"
+        >
+          <li class="project-card styled-shadow-primary">
+            <h2 class="project-card-title">Calculator</h2>
+            <img
+              src="../images/projects/project3.png"
+              alt="calculator showcase"
+              class="project-card-image"
+            />
+            <p class="project-card-desc text-md">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              libero odio optio!
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="group btn btn-outline btn-sm"
+                href="${project.sourceCode}"
+                target="_blank"
+              >
+                <img
+                  src="/icons/github-dark.svg"
+                  alt="github icon"
+                  class="block w-6 group-hover:hidden transition-opacity duration-300"
+                />
+                <img
+                  src="/icons/github.svg"
+                  alt="github icon"
+                  class="hidden w-6 group-hover:block transition-opacity duration-300"
+                />
+              </a>
+              <a
+                class="btn btn-ghost btn-sm"
+                href="${project.details}"
+                target="_blank"
+              >
+                <img src="/icons/info.svg" alt="github icon" class="w-6" />
+              </a>
+            </div>
+          </li>
+          <li class="project-card styled-shadow-primary">
+            <h2 class="project-card-title">Calculator</h2>
+            <img
+              src="../images/projects/project3.png"
+              alt="calculator showcase"
+              class="project-card-image"
+            />
+            <p class="project-card-desc text-md">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              libero odio optio!
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="group btn btn-outline btn-sm"
+                href="${project.sourceCode}"
+                target="_blank"
+              >
+                <img
+                  src="/icons/github-dark.svg"
+                  alt="github icon"
+                  class="block w-6 group-hover:hidden transition-opacity duration-300"
+                />
+                <img
+                  src="/icons/github.svg"
+                  alt="github icon"
+                  class="hidden w-6 group-hover:block transition-opacity duration-300"
+                />
+              </a>
+              <a
+                class="btn btn-ghost btn-sm"
+                href="${project.details}"
+                target="_blank"
+              >
+                <img src="/icons/info.svg" alt="github icon" class="w-6" />
+              </a>
+            </div>
+          </li>
+          <li class="project-card styled-shadow-primary">
+            <h2 class="project-card-title">Calculator</h2>
+            <img
+              src="../images/projects/project3.png"
+              alt="calculator showcase"
+              class="project-card-image"
+            />
+            <p class="project-card-desc text-md">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              libero odio optio!
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="group btn btn-outline btn-sm"
+                href="${project.sourceCode}"
+                target="_blank"
+              >
+                <img
+                  src="/icons/github-dark.svg"
+                  alt="github icon"
+                  class="block w-6 group-hover:hidden transition-opacity duration-300"
+                />
+                <img
+                  src="/icons/github.svg"
+                  alt="github icon"
+                  class="hidden w-6 group-hover:block transition-opacity duration-300"
+                />
+              </a>
+              <a
+                class="btn btn-ghost btn-sm"
+                href="${project.details}"
+                target="_blank"
+              >
+                <img src="/icons/info.svg" alt="github icon" class="w-6" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer
+        class="flex items-center w-full p-2 border-t gap-6 border-th-foreground"
+      >
+        <a href="/#hero">
+          <img
+            src="/images/favicon.ico"
+            alt="logo"
+            class="w-8"
+            id="footer-logo"
+          />
+        </a>
+        <p>© 2025 Irdan Guntara</p>
+      </footer>
+    </main>
+  </body>
+</html>

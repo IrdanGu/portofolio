@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="mx-auto max-w-screen-2xl transition-colors">
+    <nav
+      class="fixed top-0 left-0 z-20 w-full bg-th-background"
+      id="nav-wrapper"
+    >
+      <div class="flex items-center justify-between px-6 py-2 mx-auto">
+        <div
+          class="bg-th-primary text-th-background text-base font-bold w-8 h-8 flex justify-center items-center rounded-full shadow-lg"
+        >
+          R
+        </div>
+
+        <!-- Hamburger Menu for Small Screens -->
+        <button
+          id="menu-toggle"
+          aria-label="Toggle navigation menu"
+          class="block md:hidden text-th-primary focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <!-- Navbar Links -->
+        <ul id="menu" class="items-center hidden md:flex space-x-6">
+          <li><a href="#hero" class="link">Home</a></li>
+          <li><a href="#about" class="link">About</a></li>
+          <li><a href="#projects" class="link">Projects</a></li>
+          <li><a href="#contact" class="link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sidebar for Small Screens -->
+    <aside
+      id="sidebar"
+      class="fixed inset-y-0 right-0 z-50 hidden w-64 bg-th-primary text-th-background transform translate-x-full transition-transform duration-300"
+    >
+      <button
+        id="sidebar-close"
+        class="absolute top-4 right-4 text-th-background focus:outline-none"
+      >
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <ul class="px-6 mt-12 text-2xl space-y-6">
+        <li><a href="#hero" class="link">Home</a></li>
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#projects" class="link">Projects</a></li>
+        <li><a href="#contact" class="link">Contact</a></li>
+        <li><button class="link" id="mobile-theme-button">Theme</button></li>
+      </ul>
+    </aside>
+
+    <main
+      class="flex flex-col items-center justify-center mt-10 md:mt-0 h-screen content-center"
+    >
+      <section class="section bg-th-secondary rounded" id="contact">
+        <h1 class="mb-8 text-3xl font-bold text-center text-th-background">
+          Contact
+          <span class="block w-12 h-1 mx-auto mt-2 bg-th-background"></span>
+        </h1>
+        <form
+          netlify-honeypot="bot-field"
+          method="POST"
+          class="w-full mx-auto space-y-6 lg:w-2/3"
+          name="contact-form"
+          netlify
+        >
+          <h1 class="text-lg font-medium">
+            Get in touch -
+            <a
+              class="hover:underline text-th-primary"
+              href="mailto:diegommrez12@gmail.com"
+              >diegommrez12@gmail.com</a
+            >
+          </h1>
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
+          <input
+            type="email"
+            class="input"
+            placeholder="Your email..."
+            name="email"
+          />
+          <input
+            type="text"
+            class="input"
+            placeholder="Your name..."
+            maxlength="255"
+            minlength="2"
+            name="name"
+          />
+          <textarea
+            cols="10"
+            rows="5"
+            class="input"
+            placeholder="Your message..."
+            minlength="10"
+            maxlength="1200"
+            name="message"
+          ></textarea>
+          <button class="btn btn-outline btn-md">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer
+      class="flex items-center w-full p-2 border-t gap-6 border-th-foreground"
+    >
+      <a href="/#hero">
+        <img
+          src="/images/favicon.ico"
+          alt="logo"
+          class="w-8"
+          id="footer-logo"
+        />
+      </a>
+      <p>© 2025 Irdan Guntara</p>
+    </footer>
+  </body>
+</html>
