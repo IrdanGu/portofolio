@@ -79,7 +79,6 @@
         <li><a href="./contact.html" class="link">Contact</a></li>
       </ul>
     </aside>
-
     <main class="flex flex-col items-center justify-center mt-10 md:mt-0">
       <section
         class="section text-th-foreground h-screen content-center"
@@ -89,10 +88,28 @@
           Projects
           <span class="block w-12 h-1 mx-auto mt-2 bg-th-primary"></span>
         </h1>
+
+        <!-- Filter Buttons -->
+        <div id="myBtnContainer" class="flex gap-4 mb-8 justify-center">
+          <button
+            class="btn btn-primary active p-3"
+            onclick="filterSelection('all')"
+          >
+            Show All
+          </button>
+          <button class="btn btn-primary p-3" onclick="filterSelection('game')">
+            Games
+          </button>
+          <button class="btn btn-primary p-3" onclick="filterSelection('tool')">
+            Tools
+          </button>
+        </div>
+
+        <!-- Project List -->
         <ul
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-8 md:gap-4"
         >
-          <li class="project-card styled-shadow-primary">
+          <li class="project-card styled-shadow-primary column game">
             <h2 class="project-card-title">Equalize Number</h2>
             <img
               src="../images/projects/project1.png"
@@ -105,8 +122,7 @@
             <div class="flex gap-4">
               <a
                 class="group btn btn-outline btn-sm"
-                href="https://github.com/irza1/equalize-number
-              "
+                href="https://github.com/irza1/equalize-number"
                 target="_blank"
               >
                 <img
@@ -125,11 +141,11 @@
                 href="https://irza1.github.io/equalize-number/"
                 target="_blank"
               >
-                <img src="../icons/info.svg" alt="github icon" class="w-6" />
+                <img src="../icons/info.svg" alt="info icon" class="w-6" />
               </a>
             </div>
           </li>
-          <li class="project-card styled-shadow-primary">
+          <li class="project-card styled-shadow-primary column game">
             <h2 class="project-card-title">Tic Tac Toe</h2>
             <img
               src="../images/projects/project3.png"
@@ -161,11 +177,11 @@
                 href="https://irza1.github.io/Tictactoe-game/"
                 target="_blank"
               >
-                <img src="../icons/info.svg" alt="github icon" class="w-6" />
+                <img src="../icons/info.svg" alt="info icon" class="w-6" />
               </a>
             </div>
           </li>
-          <li class="project-card styled-shadow-primary">
+          <li class="project-card styled-shadow-primary column tool">
             <h2 class="project-card-title">Card Game</h2>
             <img
               src="../images/projects/project4.png"
@@ -195,13 +211,14 @@
                 href="https://irza1.github.io/card-game/"
                 target="_blank"
               >
-                <img src="../icons/info.svg" alt="github icon" class="w-6" />
+                <img src="../icons/info.svg" alt="info icon" class="w-6" />
               </a>
             </div>
           </li>
         </ul>
       </section>
     </main>
+
     <footer
       class="items-center w-full p-2 border-t gap-6 border-th-foreground hidden md:flex"
     >

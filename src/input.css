@@ -126,6 +126,16 @@
   @apply w-full p-mobile lg:p;
 }
 
+.column {
+  display: none;
+}
+.column.show {
+  display: block;
+}
+.btn.active {
+  background-color: #9c9e80; /* Adjust active button color */
+}
+
 @font-face {
   font-family: "JetBrainsMono";
   src: url("/font/JetBrainsMono-Regular.ttf");
